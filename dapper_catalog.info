@@ -1,0 +1,5 @@
+name = Dapper Catalog
+description = Module that can turn any rendered nodes with display mode "Catalog tile" into a fantastic looking catalog. Designed to work well with the Dapper theme.
+package = Commerce (contrib)
+files[] = css/dapper_catalog.css
+core = 7.x

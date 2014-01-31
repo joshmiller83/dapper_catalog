@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * A module that defines and uses a custom display mode.
+ */
+
+/**
+ * Implements hook_entity_info_alter().
+ * The first attribute in the array defines an arbitrary label for the view
+ * mode machine name.
+ * 'custom settings' => TRUE displays the view mode as a default at the top of
+ * the display modes
+ */
+function dapper_catalog_entity_info_alter(&$entity_info) {
+  $entity_info['node']['view modes']['catalog_tile'] = array(
+    'label' => t('Catalog Tile'),
+    'custom settings' => TRUE,
+  );
+}
